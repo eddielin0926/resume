@@ -1,8 +1,8 @@
 %-------------------------
 % Resume in Latex
-% Author : Jake Gutierrez
+% Author: Jake Gutierrez
 % Based off of: https://github.com/sb2nov/resume
-% License : MIT
+% License: MIT
 %------------------------
 
 \documentclass[letterpaper,11pt]{article}
@@ -47,7 +47,7 @@
 \addtolength{\oddsidemargin}{-0.6in}
 \addtolength{\evensidemargin}{-0.5in}
 \addtolength{\textwidth}{1.19in}
-\addtolength{\topmargin}{-.7in}
+\addtolength{\topmargin}{-.8in}
 \addtolength{\textheight}{1.4in}
 
 \urlstyle{same}
@@ -117,14 +117,9 @@
 \begin{document}
 
 %----------HEADING----------
-% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
-%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
-% \end{tabular*}
-
 \begin{center}
-    {\Huge \bf CYUN-KAI LIN} \\ \vspace{1pt}
-    11F-1, No.509, Dehua St., North Dist., Taichung City 404 , Taiwan (R.O.C.) \\ \vspace{1pt}
+    {\Huge \bf \fontfamily{LinuxLibertineT-LF}\selectfont CYUN-KAI LIN} \\ \vspace{1pt}
+    % 11F-1, No.509, Dehua St., North Dist., Taichung City 404, Taiwan \\ \vspace{1pt}
     \small \raisebox{-0.1\height}\faPhone\ +886 963-926-355 ~ \href{mailto:eddielin0926@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  eddielin0926@gmail.com} ~ 
     \href{https://www.linkedin.com/in/cyun-kai-lin}{\raisebox{-0.2\height}\faLinkedin\ linkedin.com/in/cyun-kai-lin} ~
     \href{https://github.com/eddielin0926}{\raisebox{-0.2\height}\faGithub\ github.com/eddielin0926}
@@ -136,106 +131,108 @@
 \section{Education}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {National Cheng Kung University}{September 2020 -- June 2023}
+      {National Cheng Kung University}{Sep. 2019 -- June 2023}
       {Bachelor of Science in  Computer Science and Information Engineering}{Tainan City, Taiwan}
     \resumeItemListStart
         \resumeItem{Overall GPA: 3.98/4.3}
         \resumeItem{Capstone Project: Implementation of MCU gateway on NXP-MPC5748G for In-vehicle hybrid networks}
+        \resumeItem{Relevant Coursework: Software Design, Linux Kernel Internals, Computer System and Network Administration}
       \resumeItemListEnd
   \resumeSubHeadingListEnd
-
-%------RELEVANT COURSEWORK-------
-% \section{Relevant Coursework}
-%     \begin{multicols}{3}
-%         \begin{itemize}[itemsep=-5pt, parsep=3pt]
-%             \item System Administration (A+)
-%             \item Linux Kernel Internals (A+)
-%             \item Compiler Construction (A+)
-%             \item Quantum Programming (A+)
-%             \item Software Design (A+)
-%             \item Mobile Networks (A+)
-%         \end{itemize}
-%     \end{multicols}
-%     \vspace*{2.0\multicolsep}
-
+\vspace{-16pt}
 
 %-----------EXPERIENCE-----------
 \section{Experience}
   \resumeSubHeadingListStart
 
     \resumeSubheading
-      {Microsoft}{July 2022 -- December 2023}
-      {Research and Development Intern}{Taipei City, Taiwan}
+      {Microsoft}{July 2022 -- Dec. 2023}
+      {Research Development Intern}{Taipei City, Taiwan}
       \resumeItemListStart
-        \resumeItem{Developed mixed reality use cases for enterprise partners utilizing Azure Digital Twin, helping customers build their digital factories to early detect a potential problem and enhance the experience of remote assistance.}
-        \resumeItem{Utilized Unity and the Mixed Reality Toolkit to create demonstration projects showcasing the potential of mixed reality in various industries, and Azure Communication Service for IoT data processing.}
-        \resumeItem{Collaborated with cross-functional teams to develop a business model for offering mixed reality solutions to enterprise partners, particularly in IoT, enterprise and robotics scenarios.}
-        \resumeItem{Contributed in a project that allows controlling a robotics arm by operating in the HoloLens, and monitoring the status of the real robotics arm without touching it. In addition, this project is demonstrated in Microsoft DevDays Asia 2022.}
+        \resumeItem{Worked in the Customer Innovation and Robotic Research teams, focusing on integrating mixed reality and robots.}
+        \resumeItem{Implemented a ROS package that can provide a  low latency SignalR connection to interact with ROS.}
+        \resumeItem{Presented remote control system of a robotic arm in mixed reality in Microsoft DevDays Asia 2022.}
+        \resumeItem{Developed mixed reality use cases utilizing Azure Digital Twin to enhance the remote assistance experience.}
       \resumeItemListEnd
 
     \resumeSubheading
-      {National Cheng Kung University}{February 2020 -- December 2023}
-      {Teaching Assistant}{Tainan City, Taiwan}
+      {National Cheng Kung University}{Feb. 2021 -- Dec. 2023}
+      {Teaching Assistant, Windows Programming, Prof. Jui-Hung Chang}{Tainan City, Taiwan}
       \resumeItemListStart
-        \resumeItem{Assist Pr. Jui-Hung Chang in teaching undergraduate students how to create windows platform applications using C\# and building games with Unity.}
-        \resumeItem{Taught more than 500 students in total and received positive feedback from students and faculty members.}
+        \resumeItem{Taught undergraduate students how to design Windows applications using C\# and develop games with Unity.}
+        \resumeItem{Conducted over 500 undergraduate students and received positive feedback from students and faculty members.}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {National Cheng Kung University}{Mar. 2023 -- Dec. 2023}
+      {Research Assistant, Creative System and Software Applications Lab, Prof. Jui-Hung Chang}{Tainan City, Taiwan}
+      \resumeItemListStart
+        \resumeItem{Collaborated with Taiwan's Ministry of Health and Welfare to set up the ICD classification system for death causes.}
+        \resumeItem{Achieved 91\% accuracy in selecting suitable diseases from 40k International Classification of Diseases (ICD)}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {National Cheng Kung University}{Aug. 2021 -- June 2022}
+      {Research Assistant, Computer \& Internet Architecture Lab, Prof. Yeim-Kuan Chang}{Tainan City, Taiwan}
+      \resumeItemListStart
+        \resumeItem{Researched and developed a gateway module for Automotive Open System Architecture (AUTOSAR).}
     \resumeItemListEnd
     
   \resumeSubHeadingListEnd
-\vspace{-16pt}
+\vspace{-15pt}
 
 %-----------PROJECTS-----------
 \section{Projects}
     \vspace{-5pt}
     \resumeSubHeadingListStart
       \resumeProjectHeading
-          {\textbf{AInimal} $|$ \emph{React Native, Express, Docker}}{December 2021}
+          {\href{https://official.ainimal.io/}{\textbf{AInimal}} $|$ \emph{React Native, Express, Docker}}{Dec. 2021}
           \resumeItemListStart
-            \resumeItem{Worked on the development of the dating app, which uses a deep learning model to match users based on their personality score.}
-            \resumeItem{Contributed to the development of a dating app that currently boasts 10,000 active users.}
-            \resumeItem{Developed three major update features for the dating app, resulting in a 4,000 user increase.}
+            \resumeItem{Worked on developing the dating app, which uses a deep learning model to match users by their personality.}
+            \resumeItem{Contributed to developing a dating app boasting 10,000 active users and over 600,000 messages.}
+            \resumeItem{Developed three major update features for the dating app, resulting in a 4,000-user increase in one year.}
             \resumeItem{Maintained over 100 backend unit tests, including database operation and API functionality tests.}
           \resumeItemListEnd
           \vspace{-13pt}
       \resumeProjectHeading
-          {\textbf{ICD-Tokenize} $|$ \emph{Python, Pytorch}}{May 2023}
+          {\href{https://github.com/eddielin0926/cjkfuzz}{\textbf{CJKfuzz}} $|$ \emph{Python}}{Aug. 2023}
           \resumeItemListStart
-            \resumeItem{Select suitable diseases with 91\% of accuracy from 40k of International Classification of Diseases(ICD), based on doctors' narrative,}
-            \resumeItem{Applied to the system for setting up ICD database in the Ministry of Health and Welfare at Taiwan.}
+            \resumeItem{Developed Python library for supporting fuzzy matching and similarity measure in Chinese, Japanese, and Korean.}
+            \resumeItem{Implemented several distance algorithms in Python, including Jaro–Winkler and Levenshtein distance.}
           \resumeItemListEnd 
     \resumeSubHeadingListEnd
 \vspace{-15pt}
 
-
-%-----------PROGRAMMING SKILLS-----------
-\section{Skills}
- \begin{itemize}[leftmargin=0.15in, label={}]
-    \small{\item{
-     \textbf{Languages}{: C, C++, C\#, Python, JavaScript, TypeScript, Verilog, Go, Java, Rust, Matlab, Scala, SQL, HTML, CSS} \\
-     \textbf{Frameworks}{: React, React Native, Vue, FastAPI, Express, .NET, MRTK, Jest, Expo, Pytorch, OpenMPI, OpenPBS} \\
-     \textbf{Technologies}{: Docker, Kubernetes, HPC, ROS, CI/CD, SA/NA, Azure, Unity, HoloLens, Kinect, Omniverse, 3D Printing} \\
-    }}
- \end{itemize}
- \vspace{-16pt}
-
-
 %-----------INVOLVEMENT---------------
 \section{Extracurricular}
     \resumeSubHeadingListStart
-        \resumeSubheading{Google Developer Student Club}{September 2022 -- June 2023}{Google Cloud Platform Team}{National Cheng Kung University}
+        \resumeSubheading{Google Developer Student Club}{Sep. 2022 -- June 2023}{Core Team Member}{National Cheng Kung University}
             \resumeItemListStart
-                \resumeItem{Leading team member deploy group project on Google Cloud Platform.}
+                \resumeItem{Guiding team members implemented unit tests for projects and integrated tests into CI/CD pipelines on GCP.}
             \resumeItemListEnd
         
     \resumeSubHeadingListEnd
+\vspace{-15pt}
 
 %-----------AWARDS---------------
 \section{Awards}
     \resumeSubHeadingListStart
-        \resumeSubheading{Asia-Pacific HPC-AI Student Competition}{October 2021}{Third Place \& Best Deep Learning Performance}{Singapore}
-        \resumeSubheading{Microsoft Global Hackathon 2022}{September 2022}{Award Winner}{Taiwan}
-        \resumeSubheading{Microsoft Global Hackathon 2023}{September 2023}{Winner Project}{Taiwan}
-        \resumeSubheading{Integrated Circuit Design Contest}{May 2023}{Honorable Mention}{Taiwan}
+        \resumeSubheading{\href{https://nci.org.au/news-events/news/growing-skills-hpc-researchers-through-regional-competition}{Asia-Pacific HPC-AI Competition}}{Nov. 2022}{Third Place \& Best Deep Learning Performance -- among 24 teams across 12 countries}{HPC-AI Advisory Council}
+        \resumeSubheading{\href{https://news.microsoft.com/zh-tw/features/microsoft-hackathon-2022/}{Microsoft Global Hackathon}}{Oct. 2022}{Award Winner -- the top project of mixed reality in global}{Microsoft}
+        \resumeSubheading{Microsoft Global Hackathon}{Sep. 2023}{Winner Project -- the top project in Taiwan}{Microsoft}
+        \resumeSubheading{\href{https://www.csie.ncku.edu.tw/zh-hant/news/12560}{Integrated Circuit Design Contest}}{May 2023}{Honorable Mention Award -- the top 5 teams among 131 teams in Taiwan}{Ministry of Education, Taiwan}
     \resumeSubHeadingListEnd
+\vspace{-12pt}
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Skills}
+ \begin{itemize}[leftmargin=0.0in, label={}]
+    \small{\item{
+     \textbf{Languages}{: C, C++, C\#, Python, JavaScript, TypeScript, Verilog, Go, Java, Rust, Matlab, Scala, SQL, HTML, CSS} \\
+     \textbf{Frameworks}{: React, React Native, Vue, FastAPI, Express, .NET, MRTK, Jest, Expo, Pytorch, OpenMPI, OpenPBS} \\
+     \textbf{Technologies}{: Docker, Kubernetes, HPC, ROS, CI/CD, Azure, Unity, HoloLens, Kinect, Omniverse, 3D Printing} \\
+    }}
+ \end{itemize}
+ \vspace{-16pt}
 
 \end{document}
