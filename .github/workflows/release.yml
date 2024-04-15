@@ -25,6 +25,7 @@ jobs:
           path: main.pdf
       
       - name: Bump version and push tag
+        id: tag_version
         uses: mathieudutour/github-tag-action@v6.2
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
@@ -32,4 +33,5 @@ jobs:
       - name: Release PDF
         uses: softprops/action-gh-release@v2
         with:
+          tag_name: ${{ steps.tag_version.outputs.new_tag }}
           files: resume.zip
