@@ -1,0 +1,35 @@
+name: Compile Latex and Release PDF 📄
+on:
+  push:
+    paths:
+      - '**.tex'
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Compile Latex
+        uses: xu-cheng/latex-action@v3
+        with:
+          root_file: main.tex
+      
+      - name: Upload PDF artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: resume
+          path: main.pdf
+      
+      - name: Bump version and push tag
+        uses: mathieudutour/github-tag-action@v6
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Release PDF
+        uses: softprops/action-gh-release@v2
+        with:
+          files: resume.zip
