@@ -1,0 +1,249 @@
+%-------------------------
+% Resume in Latex
+% Author: Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License: MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-0.75in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    {\Huge \scshape Cyun-Kai (Eddie) Lin} \\ \vspace{1pt}
+    % 11F-1, No.509, Dehua St., North Dist., Taichung City 404, Taiwan \\ \vspace{1pt}
+    \small \raisebox{-0.1\height}\faPhone\ +1 (412)\ 726-4525 ~ 
+    \href{mailto:eddielin0926@gmail.com}
+    {\raisebox{-0.1\height}\faEnvelope\  eddielin0926@gmail.com} ~ 
+    \href{https://www.linkedin.com/in/cyun-kai-lin}{\raisebox{-0.1\height}\faLinkedin\ linkedin.com/in/cyun-kai-lin} ~
+    \href{https://github.com/eddielin0926}{\raisebox{-0.1\height}\faGithub\ github.com/eddielin0926}
+    \vspace{-8pt}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Carnegie Mellon University}{May. 2024 -- Dec. 2025}
+      {M.S. in Information Networking | GPA: 3.91}{Pittsburgh, PA, USA}
+      \resumeItem{Coursework: Distributed Systems, Networking and the Internet, Advance Cloud Computing, Database Systems}
+    \resumeSubheading
+      {National Cheng Kung University}{Sep. 2019 -- June 2023}
+      {B.S. in  Computer Science and Information Engineering | GPA: 3.98}{Tainan City, Taiwan}
+      \resumeItem{Coursework: Software Design, Linux Kernel Internals, Computer System and Network Administration}
+  \resumeSubHeadingListEnd
+\vspace{-16pt}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Appier}{Mar. 2024 -- Aug. 2024}
+      {Frontend Engineer}{Taipei City, Taiwan}
+      \resumeItemListStart
+        \resumeItem{Developed scalable React components as part of a larger design system, prioritizing reusability and maintainability.}
+        \resumeItem{Automated updates for internationalization translations from Lokalise, reducing manual code changes.}
+        \resumeItem{Enhanced GitHub Actions for Google Cloud Storage by optimizing file parsing, accelerating our deployment speed.}
+        \resumeItem{Implemented End-to-End testing with Playwright and deployed coverage reports to GCS, linking them in pull requests.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Microsoft}{July 2022 -- Dec. 2023}
+      {Research and Development Intern}{Taipei City, Taiwan}
+      \resumeItemListStart
+        \resumeItem{Developed a ROS package enabling low-latency SignalR connections between HoloLens2 and real-time robot interaction.}
+        \resumeItem{Presented a robotic arm remote control system in mixed reality at Microsoft DevDays Asia 2022.}
+        \resumeItem{Created MR use cases with Azure Digital Twin to improve remote control and monitoring experiences.}
+        \resumeItem{Engineered a project with NVIDIA Omniverse to simulate and monitor real-time robot movements and status.}
+      \resumeItemListEnd
+
+    % \resumeSubheading
+    %   {National Cheng Kung University}{Feb. 2021 -- Dec. 2023}
+    %   {Teaching Assistant, Windows Programming, Prof. Jui-Hung Chang}{Tainan City, Taiwan}
+    %   \resumeItemListStart
+    %     \resumeItem{Taught undergraduate students how to design Windows applications using C\# and develop games with Unity.}
+    %     \resumeItem{Conducted over 500 undergraduate students and received positive feedback from students and faculty members.}
+    % \resumeItemListEnd
+
+    \resumeSubheading
+      {National Cheng Kung University}{Mar. 2023 -- Dec. 2023}
+      {Research Assistant}{Tainan City, Taiwan}
+      \resumeItemListStart
+        \resumeItem{Collaborated with Ministry of Health and Welfare (Taiwan) to set up the classification system for death causes.}
+        \resumeItem{Achieved 91\% accuracy in selecting suitable diseases from 40k International Classification of Diseases (ICD)}
+    \resumeItemListEnd
+
+    % \resumeSubheading
+    %   {National Cheng Kung University}{Aug. 2021 -- June 2022}
+    %   {Research Assistant, Computer \& Internet Architecture Lab, Prof. Yeim-Kuan Chang}{Tainan City, Taiwan}
+    %   \resumeItemListStart
+    %     \resumeItem{Researched and developed a gateway module for Automotive Open System Architecture (AUTOSAR).}
+    % \resumeItemListEnd
+    
+  \resumeSubHeadingListEnd
+\vspace{-15pt}
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\href{https://official.ainimal.io/}{\textbf{AInimal}} $|$ \emph{React Native, Express, Docker}}{Dec. 2021}
+          \resumeItemListStart
+            \resumeItem{Worked on developing a dating app, which utilize deep learning model to match users by their personality.}
+            \resumeItem{Contributed to developing a dating app boasting 10,000 active users and over 600,000 messages.}
+            \resumeItem{Developed three major update features for the dating app, resulting in a 4,000-user increase in one year.}
+            \resumeItem{Maintained over 100 backend unit tests, including database operation and API functionality tests.}
+          \resumeItemListEnd
+          \vspace{-13pt}
+      \resumeProjectHeading
+          {\href{https://github.com/eddielin0926/kaggle-plus}{\textbf{Kaggle Plus}} $|$ \emph{Typescript, Bun}}{Mar. 2023}
+          \resumeItemListStart
+            \resumeItem{Developed Kaggle Plus, a browser extension enhances the Kaggle competition experience by visualizing leaderboards.}
+            \resumeItem{Released Kaggle Plus on the Google Web Store, offering enhanced features with a stable, growing user base.}
+          \resumeItemListEnd 
+    \resumeSubHeadingListEnd
+\vspace{-15pt}
+
+%-----------INVOLVEMENT---------------
+\section{Extracurricular}
+    \resumeSubHeadingListStart
+        \resumeSubheading{Google Developer Student Club}{Sep. 2022 -- June 2023}{Core Team Member}{National Cheng Kung University}
+            \resumeItemListStart
+                \resumeItem{Guiding team members implemented unit tests for projects and integrated tests into CI/CD pipelines on GCP.}
+            \resumeItemListEnd
+        
+    \resumeSubHeadingListEnd
+\vspace{-15pt}
+
+%-----------AWARDS---------------
+\section{Awards}
+    \resumeSubHeadingListStart
+        \resumeSubheading{\href{https://nci.org.au/news-events/news/growing-skills-hpc-researchers-through-regional-competition}{Asia-Pacific HPC-AI Competition}}{Nov. 2022}{Third Place \& Best Deep Learning Performance -- among 24 teams across 12 countries}{HPC-AI Advisory Council}
+        \resumeSubheading{\href{https://news.microsoft.com/zh-tw/features/microsoft-hackathon-2022/}{Microsoft Global Hackathon}}{Oct. 2022}{Award Winner -- the top project of mixed reality in global}{Microsoft}
+        % \resumeSubheading{\href{https://www.csie.ncku.edu.tw/zh-hant/news/12560}{Integrated Circuit Design Contest}}{May 2023}{Honorable Mention Award -- the top 5 teams among 131 teams in Taiwan}{Ministry of Education, Taiwan}
+    \resumeSubHeadingListEnd
+\vspace{-12pt}
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Skills}
+ \begin{itemize}[leftmargin=0.0in, label={}]
+    \small{\item{
+     \textbf{Programming Languages}{: C, C++, C\#, Python, JavaScript, TypeScript, Go, Java, Verilog, Rust, Scala} \\
+     \textbf{Frameworks}{: React, React Native, Vue, FastAPI, Express, .NET, MRTK, Jest, Expo, Pytorch, Gin, Playwright, Storybook} \\
+     \textbf{Technologies}{: Docker, Kubernetes, Node.js, HPC, ROS, CI/CD, Azure, GCP, Unity, HoloLens, Omniverse, Nx, Turborepo} \\
+    }}
+ \end{itemize}
+ \vspace{-16pt}
+
+\end{document}
